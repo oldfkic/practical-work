@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">HelloUI</div>
+        <nav class="navbar navi">
+          <a href="#" class="nav__link">Docs</a>
+          <a href="#" class="nav__link">Tools</a>
+          <a href="#" class="nav__link">Freatures</a>
+          <a href="#" class="nav__link">Pricing</a>
+          <a href="#" class="nav__link">Jobs</a>
+        </nav>
+        <div class="account">
+          <button class="sign-in" type="button">Sign in</button>
+          <button class="sub" type="button">Try for free</button>
+        </div>
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </header>
+    </div>
+
+    <script>
+      // Look for .hamburger
+      var hamburger = document.querySelector(".hamburger");
+      var navi = document.querySelector(".navi");
+      var account = document.querySelector(".account");
+      // On click
+      hamburger.addEventListener("click", function () {
+        // Toggle class "is-active"
+        hamburger.classList.toggle("is-active");
+        navi.classList.toggle("is-active");
+        account.classList.toggle("is-active");
+        // Do something else, like open/close menu
+      });
+    </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
