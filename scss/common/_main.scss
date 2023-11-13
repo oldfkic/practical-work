@@ -33,18 +33,21 @@
         width: 100%;
     }
 }
+.sponsors {
+    width: 100%;
+}
 .sponsors__info {
     display: flex;
     justify-content: center;
     color: #5B5E6D;
     font-size: 1rem;
-
+    overflow-x: auto;
 }
 .sponsors__icon {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 50px;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 .slider {
     display: flex;
