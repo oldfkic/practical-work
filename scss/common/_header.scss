@@ -18,7 +18,7 @@
     align-items: center;
 
     @media screen and (max-width: 992px) {
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -103,7 +103,7 @@
         z-index: 101;
 
         &.is-active {
-            background-color: #fff;
+            background-color: #ffffff80;
         }
 
     }

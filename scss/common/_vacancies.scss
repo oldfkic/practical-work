@@ -1,0 +1,135 @@
+.vacancies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    max-width: 895px;
+}
+.vacancies__title {
+    color: #050038;
+    font-weight: 700;
+    font-size: 42px;
+    text-align: center;
+}
+.vacancies__info {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    max-width: 778px;
+    line-height: 32px;
+    margin: 0;
+}
+.vacancies__nav {
+    width: 245px;
+    height: 50px;
+    border-radius: 30px;
+    background: rgba(5, 85, 255, 0.10);
+    color: #0555FF;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+.vacancies__float-1 {
+    display: flex;
+    margin-top: 100px;
+    gap: 100px;
+    @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        gap: 10px;
+        background: #bfbfbf;
+        border-radius: 15px;
+        padding: 15px;
+    }
+}
+.float {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.float__name {
+    color: #050038;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0;
+}
+.float__info {
+    color: #5B5E6D;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 32px;
+}
+.float__figure {
+    position: relative;
+}
+.float__image {
+    max-width: 457px;
+    max-height: 460px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    box-shadow: -20px 20px 60px 0px rgba(121, 164, 255, 0.30);
+}
+.dot {
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+}
+.aqua {
+    position: absolute;
+    top: 45px;
+    right: -20px;
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+}
+.orange {
+    position: absolute;
+    bottom: 15px;
+    right: -55px;
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+}
+
+.vacancies__float--reverse {
+    flex-direction: row-reverse;
+    @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+}
+
+.vacancies__float--reverse .dot{
+    left: auto;
+    right: -5px;
+}
+.vacancies__float--reverse .aqua {
+    right: auto;
+    left: -5px;
+}
+
+.vacancies__float--reverse .orange {
+    right: auto;
+    left: -30px;
+    transform: scaleX(-1);
+}
