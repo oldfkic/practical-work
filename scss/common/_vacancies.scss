@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
 .intro {
     display: flex;
@@ -78,8 +79,7 @@
     position: relative;
 }
 .float__image {
-    max-width: 457px;
-    max-height: 460px;
+    width: 100%;
     border-radius: 10px;
     position: relative;
     z-index: 2;
@@ -87,8 +87,8 @@
 }
 .dot {
     position: absolute;
-    left: 10px;
-    bottom: 15px;
+    left: -50px;
+    bottom: -50px;
     @media screen and (max-width: 992px) {
         display: none;
     }
@@ -96,15 +96,15 @@
 .aqua {
     position: absolute;
     top: 45px;
-    right: -20px;
+    right: -50px;
     @media screen and (max-width: 992px) {
         display: none;
     }
 }
 .orange {
     position: absolute;
-    bottom: 15px;
-    right: -55px;
+    bottom: -30px;
+    right: -85px;
     @media screen and (max-width: 992px) {
         display: none;
     }
@@ -121,15 +121,15 @@
 
 .vacancies__float--reverse .dot{
     left: auto;
-    right: -5px;
+    right: -50px;
 }
 .vacancies__float--reverse .aqua {
     right: auto;
-    left: -5px;
+    left: -50px;
 }
 
 .vacancies__float--reverse .orange {
     right: auto;
-    left: -30px;
+    left: -85px;
     transform: scaleX(-1);
 }
