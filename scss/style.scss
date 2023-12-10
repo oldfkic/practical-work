@@ -1,3 +1,13 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+@import 'common/var';
+@import 'common/fonts';
+@import 'common/header';
+@import 'common/main';
+@import 'common/vacancies';
+@import 'common/review';
+@import 'common/footer';
+$hamburger-types: (collapse);
 * {
     box-sizing: border-box;
 }
@@ -18,13 +28,3 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Circular Std', sans-serif;
 }
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
-$hamburger-types: (collapse);
-@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
-@import 'common/var';
-@import 'common/fonts';
-@import 'common/header';
-@import 'common/main';
-@import 'common/vacancies';
-@import 'common/review';
-@import 'common/footer';
