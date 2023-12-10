@@ -1,0 +1,130 @@
+.start {
+    background: #130C3A;
+    padding-top: 150px;
+    position: relative;
+}
+.start__title {
+    max-width: 500px;
+    color: #fff;
+    font-size: 48px;
+    line-height: 85px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 50px;
+    @media screen and (max-width: 992px) {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    padding-bottom: 150px;
+}
+.email {
+    flex-grow: 1;
+    background: none;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    color: #fff;
+}
+.submit {
+    border-radius: 0px 10px 10px 0px;
+    background: #0555FF;
+    padding: 15px 30px;
+}
+.category__block{
+    display: flex;
+    gap: 80px;
+    @media screen and (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.category {
+    display: flex;
+    flex-direction: column;
+}
+.category__name {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'roboto';
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.nav__icon {
+    display: flex;
+    gap: 15px;
+    line-height: normal;
+    padding-top: 10px;
+}
+.icon {
+    color: #C4C4C4;
+}
+.category__block-1 {
+    display: flex;
+    gap: 80px;
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+.category__title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.category__nav {
+    display: flex;
+    flex-direction: column;
+}
+.link {
+    color: #7884A6;
+    line-height: 40px;
+}
+.icon {
+    text-decoration: none;
+}
+.copyright {
+    color: #fff;
+    text-align: center;
+    background: #0F0937;
+    padding: 20px ;
+    margin-top: 50px;
+}
+.dot-2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.orange-2 {
+    position: absolute;
+    transform: rotate(110deg);
+    top: 30px;
+    left: 200px;
+    @media screen and (max-width: 500px) {
+        display: none;
+    }
+}
+.blue-2 {
+    position: absolute;
+    top: 0;
+    right: 200px;
+    @media screen and (max-width: 500px) {
+        display: none;
+    }
+}
+.semicircle {
+    position: absolute;
+    bottom: 45%;
+    right: 0;
+}
+.crescent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

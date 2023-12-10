@@ -17,6 +17,10 @@
     font-weight: 700;
     font-size: 42px;
     text-align: center;
+    @media screen and (max-width: 992px) {
+        font-size: 32px;
+        padding-top: 30px;
+    }
 }
 .vacancies__info {
     display: flex;
@@ -39,6 +43,15 @@
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
+    transition: .2s linear;
+    &:hover {
+        box-shadow: #677085 0 0px 0px 40px inset;
+    }
+}
+.vacancies__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 .vacancies__float-1 {
     display: flex;
@@ -47,11 +60,9 @@
     @media screen and (max-width: 992px) {
         display: flex;
         flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
         max-width: 100%;
         gap: 10px;
-        background: #bfbfbf;
+        background: #f1f1f1;
         border-radius: 15px;
         padding: 15px;
     }
@@ -60,6 +71,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 60%;
+    @media screen and (max-width: 992px) {
+        width: 100%;
+    }
 }
 .float__name {
     color: #050038;
@@ -68,15 +83,31 @@
     font-weight: 900;
     line-height: normal;
     margin: 0;
+    @media screen and (max-width: 992px) {
+        font-size: 32px;
+    }
 }
 .float__info {
     color: #5B5E6D;
     font-size: 20px;
     font-style: normal;
     line-height: 32px;
+    @media screen and (max-width: 992px) {
+        display: flex;
+    }
+}
+.float__nav {
+    color: #000;
+    text-decoration-color: #0555FF;
+    font-size: 18px;
+    text-underline-offset: 5px;
 }
 .float__figure {
     position: relative;
+    width: 40%;
+    @media screen and (max-width: 992px) {
+        width: 100%;
+    }
 }
 .float__image {
     width: 100%;

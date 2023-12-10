@@ -1,6 +1,9 @@
 .review {
     background: #F8F8FA;
     padding: 150px 0;
+    @media screen and (max-width: 992px) {
+        padding: 40px 10px;
+    }
 }
 .review__info {
     color: #5B5E6D;
@@ -16,10 +19,12 @@
     font-size: 72px;
     font-style: normal;
     font-weight: 900;
-    line-height: 32px;
     margin-bottom: 100px;
     @media screen and (max-width: 992px) {
-        line-height: 60px;
+        
+        margin: 0;
+        font-size: 32px;
+        padding: 20px 0 30px;
     }
 }
 .review__users {
@@ -39,7 +44,7 @@
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.10);
     background: #FFF;
-    padding: 5px;
+    padding: 5px 10px;
 }
 .user__header {
     display: flex;
@@ -48,6 +53,7 @@
 .user__login {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .user__web {
     margin-left: auto;
